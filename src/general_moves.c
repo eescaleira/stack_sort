@@ -27,7 +27,7 @@ void	lastmove(t_stack **destiny, t_stack **origin)
 int	push(t_stack **destiny, t_stack **origin)
 {
 	t_stack	*temp;
-
+ 
 	if (ft_lstsize(*origin) == 1)
 		lastmove(&(*destiny), &(*origin));
 	else if (!*destiny)
