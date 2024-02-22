@@ -6,7 +6,7 @@
 /*   By: eescalei <eescalei@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 20:56:21 by eescalei          #+#    #+#             */
-/*   Updated: 2023/11/11 13:11:02 by eescalei         ###   ########.fr       */
+/*   Updated: 2024/02/22 09:56:13 by eescalei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,13 +43,13 @@ void print_stack(t_stack *stack_a, t_stack *stack_b)
 	int i;
 	
 	i = 0;
-	printf("Stack A                                                               Stack B\n");
-	printf("------------------------------------------------------------------    ------------------------------------------------------------------\n");	
+	printf("Stack A                                                                 Stack B\n");
+	printf("--------------------------------------------------------------------    --------------------------------------------------------------------\n");	
 	while(stack_a || stack_b)
 	{
 		if(stack_a)
 		{
-			printf("| %5i | content:%5i | index:%3i | direction:%2i | moves:%5i |    ", stack_a->position, stack_a->content, stack_a->index, stack_a->direction, stack_a->moves);
+			printf("| %5i | content:%7i | index:%3i | direction:%2i | moves:%5i |    ", stack_a->position, stack_a->content, stack_a->index, stack_a->direction, stack_a->moves);
 			stack_a = stack_a->next;
 		}
 		if(stack_b)
@@ -58,7 +58,7 @@ void print_stack(t_stack *stack_a, t_stack *stack_b)
 				printf("                                                                      ");
 			if(!stack_a)
 				i = 1;
-			printf("| %5i | content:%5i | index:%3i | direction:%2i | moves:%5i |", stack_b->position, stack_b->content, stack_b->index, stack_b->direction, stack_b->moves);
+			printf("| %5i | content:%7i | index:%3i | direction:%2i | moves:%5i |", stack_b->position, stack_b->content, stack_b->index, stack_b->direction, stack_b->moves);
 			stack_b = stack_b->next;
 		}
 		printf("\n");

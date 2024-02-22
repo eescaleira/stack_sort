@@ -6,7 +6,7 @@
 /*   By: eescalei <eescalei@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/08 18:54:04 by eescalei          #+#    #+#             */
-/*   Updated: 2023/11/11 13:09:05 by eescalei         ###   ########.fr       */
+/*   Updated: 2024/02/22 09:50:36 by eescalei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int	sa(t_stack **stack_a)
 {
+	// print_stack(*stack_a, NULL);
 	if (*stack_a)
 		get_first_element(&(*stack_a));
 	if (!*stack_a || ft_lstsize(*stack_a) < 2)
@@ -25,6 +26,7 @@ int	sa(t_stack **stack_a)
 
 int	pa(t_stack **stack_a, t_stack **stack_b)
 {
+	// print_stack(*stack_a, *stack_b);
 	if (!*stack_b)
 		return (-1);
 	if (*stack_a)
@@ -37,6 +39,7 @@ int	pa(t_stack **stack_a, t_stack **stack_b)
 
 int	ra(t_stack **stack_a)
 {
+	// print_stack(*stack_a, NULL);
 	if (*stack_a)
 		get_first_element(&(*stack_a));
 	if (!*stack_a || ft_lstsize(*stack_a) < 2)
@@ -48,6 +51,7 @@ int	ra(t_stack **stack_a)
 
 int	rra(t_stack **stack_a)
 {
+	// print_stack(*stack_a, NULL);
 	if (*stack_a)
 		get_first_element(&(*stack_a));
 	if (!*stack_a || ft_lstsize(*stack_a) < 2)

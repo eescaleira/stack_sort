@@ -6,7 +6,7 @@
 #    By: eescalei <eescalei@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/27 13:37:37 by eescalei          #+#    #+#              #
-#    Updated: 2023/11/11 12:41:48 by eescalei         ###   ########.fr        #
+#    Updated: 2024/02/15 14:52:21 by eescalei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ CC = cc
 FLAGS = -Wall -Wextra -Werror
 INCLUDE = -I ./inc/
 
-SRC_PATH = ./srcs/
+SRC_PATH = ./src/
 OBJ_PATH = ./obj/
 
 LIB_PATH = ./libft/
@@ -39,7 +39,7 @@ SRCS = $(addprefix $(SRC_PATH),$(SOURCES))
 OBJ = $(SOURCES:.c=.o)
 OBJS = $(addprefix $(OBJ_PATH),$(OBJ))
 
-all: $(NAME)
+all:  $(NAME)
 
 $(NAME): $(OBJS)
 	$(CC) $(FLAGS) $(INCLUDE) $(OBJS) -o $(NAME)

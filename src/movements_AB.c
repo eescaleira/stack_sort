@@ -6,7 +6,7 @@
 /*   By: eescalei <eescalei@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 15:46:48 by eescalei          #+#    #+#             */
-/*   Updated: 2023/11/11 13:09:39 by eescalei         ###   ########.fr       */
+/*   Updated: 2024/02/22 09:50:51 by eescalei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int	ss(t_stack **stack_a, t_stack **stack_b)
 {
+	// print_stack(*stack_a, *stack_b);
 	if (*stack_b)
 		get_first_element(&(*stack_b));
 	if (*stack_a)
@@ -28,6 +29,7 @@ int	ss(t_stack **stack_a, t_stack **stack_b)
 
 int	rr(t_stack **stack_a, t_stack **stack_b)
 {
+	// print_stack(*stack_a, *stack_b);
 	if (*stack_b)
 		get_first_element(&(*stack_b));
 	if (*stack_a)
@@ -42,6 +44,7 @@ int	rr(t_stack **stack_a, t_stack **stack_b)
 
 int	rrr(t_stack **stack_a, t_stack **stack_b)
 {
+	// print_stack(*stack_a, *stack_b);
 	if (*stack_b)
 		get_first_element(&(*stack_b));
 	if (*stack_a)
